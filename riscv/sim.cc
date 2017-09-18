@@ -309,7 +309,7 @@ void sim_t::make_dtb()
          "      compatible = \"serial\";\n"
          "      reg = <0x" << (uartbs >> 32) << " 0x" << (uartbs & (uint32_t)-1) <<
                      " 0x" << (uartsz >> 32) << " 0x" << (uartsz & (uint32_t)-1) << ">;\n"
-         "      reg-shift = 0;\n"
+         "      reg-shift = <0>;\n"
          // TODO: interrupts = <...>;
          // TODO: clock-frequency or clocks
          "    };\n"
